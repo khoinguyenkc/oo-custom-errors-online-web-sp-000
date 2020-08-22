@@ -14,6 +14,7 @@ class Person
         puts error.message()
         #The rescue method creates an instance of the PartnerError class
         # and puts out the result of calling message on that instance
+        #rescue allows the next line of code to run even tho this line of code is broken
       end
     else
       person.partner = self
@@ -26,7 +27,7 @@ class Person
     end
   end
 
-  
+
 end
 
 beyonce = Person.new("Beyonce")
